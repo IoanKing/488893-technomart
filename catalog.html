@@ -13,8 +13,8 @@
           <img src="img/logo.svg" width="100" height="50" alt="Техномарт">
         </a>
         <p class="search">Поиск
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="get" aria-label="Форма поиска">
-            <input type="text" name="search-param" aria-label="Поле поиска" placeholder="Поиск:">
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
+            <input type="search" name="search-param">
             <button class="start-search" class="submit">Начать поиск</button>
           </form>
         </p>
@@ -31,10 +31,10 @@
 
       <div class="header-main-section">
         <h2 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонт</h2>
-        <a class="phone" aria-label="Контактный телефон:" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p class="adress" aria-label="Адрес:">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <ul class="user-navigation authorized" aria-label="Пользовательская навигация:">
-          <li class="user-name" aria-label="Авторизованный пользователь">
+        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <ul class="user-navigation authorized">
+          <li class="user-name">
             <p>Равшан Джамшутович</p>
             <a class="logout-link" href="#">Выход</a>
           </li>
@@ -43,7 +43,7 @@
         </ul>
       </div>
 
-      <nav class="main-navigation" aria-label="Главная навигация:">
+      <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -58,7 +58,7 @@
     </header>
 
     <main class="container">
-      <ul class="breadcrumbs" aria-label="Хлебные крошки">
+      <ul class="breadcrumbs">
         <li><a class="breadcrumbs-home" href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
@@ -73,7 +73,7 @@
         <form class="filters" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Цена:</legend>
-            <ul aria-label="Выбор диопазона цен">
+            <ul>
               <li class="filters-option">
                 <input type="range" min="0" max="100000" name="filter-range" step="10000" value="30000">
               </li>
@@ -131,17 +131,17 @@
           <p>Сортировка:</p>
           <ul class="control-list">
             <li class="control-item">
-              <button class="sort-by-price"  href="#" aria-label="Отсортировать:">По цене</button>
+              <button class="sort-by-price"  href="#">По цене</button>
             </li>
             <li class="control-item">
-              <button class="sort-by-type"  href="#" aria-label="Отсортировать:">По типу</button>
+              <button class="sort-by-type"  href="#">По типу</button>
             </li>
             <li class="control-item">
-              <button class="sort-by-functions" href="#" aria-label="Отсортировать:">По функционалу</button>
+              <button class="sort-by-functions" href="#">По функционалу</button>
             </li>
           </ul>
-          <button class="sort-up" aria-label="Отсортировать:">По возрастанию</button>
-          <button class="sort-down" aria-label="Отсортировать:">По убыванию</button>
+          <button class="sort-up">По возрастанию</button>
+          <button class="sort-down">По убыванию</button>
         </p>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -156,8 +156,8 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price" aria-label="Старая цена">22500 р.</p>
-              <a class="button" href="#" aria-label="Купить за">15500 р.</a>
+              <p class="old-price">22500 р.</p>
+              <a class="button" href="#">15500 р.</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -172,8 +172,8 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price" aria-label="Старая цена">30500 р.</p>
-              <a class="button" href="#" aria-label="Купить за">25500 р.</a>
+              <p class="old-price">30500 р.</p>
+              <a class="button" href="#">25500 р.</a>
             </p>
           </li>
           <li class="catalog-item new-item active-item">
@@ -188,7 +188,7 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <a class="button" href="#" aria-label="Купить за">12500 р.</a>
+              <a class="button" href="#">12500 р.</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -203,8 +203,8 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price" aria-label="Старая цена">22500 р.</p>
-              <a class="button" href="#" aria-label="Купить за">15500 р.</a>
+              <p class="old-price">22500 р.</p>
+              <a class="button" href="#">15500 р.</a>
             </p>
           </li>
           <li class="catalog-item new-item">
@@ -219,8 +219,8 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price" aria-label="Старая цена">30500 р.</p>
-              <a class="button" href="#" aria-label="Купить за">25500 р.</a>
+              <p class="old-price">30500 р.</p>
+              <a class="button" href="#">25500 р.</a>
             </p>
           </li>
           <li class="catalog-item new-item">
@@ -235,7 +235,7 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <a class="button" href="#" aria-label="Купить за">12500 р.</a>
+              <a class="button" href="#">12500 р.</a>
             </p>
           </li>
           <li class="catalog-item new-item">
@@ -250,8 +250,8 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price" aria-label="Старая цена">22500 р.</p>
-              <a class="button" href="#" aria-label="Купить за">15500 р.</a>
+              <p class="old-price">22500 р.</p>
+              <a class="button" href="#">15500 р.</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -266,8 +266,8 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price" aria-label="Старая цена">30500 р.</p>
-              <a class="button" href="#" aria-label="Купить за">25500 р.</a>
+              <p class="old-price">30500 р.</p>
+              <a class="button" href="#">25500 р.</a>
             </p>
           </li>
           <li class="catalog-item">
@@ -282,15 +282,23 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <a class="button" href="#" aria-label="Купить за">12500 р.</a>
+              <a class="button" href="#">12500 р.</a>
             </p>
           </li>
         </ul>
-        <ul class="pagination" aria-label="Навигация по каталогу:">
-          <li class="pagination-item pagination-item-current"><span aria-label="Текущая страница каталога:">1</span></li>
-          <li class="pagination-item"><a href="#" aria-label="Страница каталога:">2</a></li>
-          <li class="pagination-item"><a href="#" aria-label="Страница каталога:">3</a></li>
-          <li class="pagination-item pagination-next"><a href="#">Следующая</a></li>
+        <ul class="pagination">
+          <li class="pagination-item pagination-item-current">
+            <span>1</span>
+          </li>
+          <li class="pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination-item pagination-next">
+            <a href="#">Следующая</a>
+          </li>
         </ul>
       </section>
       <section class="catalog-categiry-description">
@@ -305,7 +313,7 @@
         <a class="footer-logo" href="index.html">
           <img src="img/logo.svg" width="150" height="75" alt="Техномарт">
         </a>
-        <nav class="footer-navigation-primary" aria-label="Навигация по сайту">
+        <nav class="footer-navigation-primary">
           <ul class="site-navigation">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -314,9 +322,9 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <p class="adress" aria-label="Адрес">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a class="phone" href="tel:+78125550555" aria-label="Телефон">+7 (812) 555-05-55</a>
-        <nav class="footer-navigation-secondary" aria-label="Навигация по категориям товара">
+        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <nav class="footer-navigation-secondary">
           <ul class="catalog-navigation">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
@@ -328,7 +336,7 @@
 
       <div class="footer-bottom">
         <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
-        <div class="footer-social" aria-label="Ссылки на социальные сети">
+        <div class="footer-social">
           <ul>
             <li><a class="social-button social-button-vk" href="#">ВКонтакте</a></li>
             <li><a class="social-button social-button-facebook" href="#">Фейсбук</a></li>
@@ -337,7 +345,7 @@
         </div>
         <p class="footer-feedback">
           <p>Обратная связь:</p>
-          <a href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам на почтовый ящик:">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-copyright">
           <p>Разработано:</p>
