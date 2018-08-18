@@ -12,12 +12,10 @@
         <a class="header-logo" href="index.html">
           <img src="img/logo.svg" width="100" height="50" alt="Техномарт">
         </a>
-        <p class="search">Поиск
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" name="search-param">
-            <button class="start-search" type="submit">Начать поиск</button>
-          </form>
-        </p>
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <input type="text" name="search-param" placeholder="Поиск:" aria-label="Поиск">
+          <button class="start-search" type="submit">Начать поиск</button>
+        </form>
         <p class="bookmarks">
           <a class="button" href="#">Закладки: 0</a>
         </p>
@@ -127,7 +125,7 @@
 
       <section class="catalog">
         <h2 class="visually-hidden">Список перфораторов:</h2>
-        <p class="control-bar">
+        <div class="control-bar">
           <p>Сортировка:</p>
           <ul class="control-list">
             <li class="control-item">
@@ -140,9 +138,11 @@
               <button class="sort-by-functions">По функционалу</button>
             </li>
           </ul>
-          <button class="sort-up">По возрастанию</button>
-          <button class="sort-down">По убыванию</button>
-        </p>
+          <div class="control-bar_sort">
+            <button class="sort-up">По возрастанию</button>
+            <button class="sort-down">По убыванию</button>
+          </div>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3>
@@ -153,10 +153,10 @@
             </p>
             <p class="catalog-item-action">
               <a class="button button-buy" href="#">Купить</a>
-               <a class="button button-bookmark" href="#">В закладки</a>
+              <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price">22500 р.</p>
+              <del class="old-price">22500 р.</del>
               <a class="button" href="#">15500 р.</a>
             </p>
           </li>
@@ -169,10 +169,10 @@
             </p>
             <p class="catalog-item-action">
               <a class="button button-buy" href="#">Купить</a>
-               <a class="button button-bookmark" href="#">В закладки</a>
+              <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price">30500 р.</p>
+              <del class="old-price">30500 р.</del>
               <a class="button" href="#">25500 р.</a>
             </p>
           </li>
@@ -185,7 +185,7 @@
             </p>
             <p class="catalog-item-action">
               <a class="button button-buy" href="#">Купить</a>
-               <a class="button button-bookmark" href="#">В закладки</a>
+              <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
               <a class="button" href="#">12500 р.</a>
@@ -203,7 +203,7 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price">22500 р.</p>
+              <del class="old-price">22500 р.</del>
               <a class="button" href="#">15500 р.</a>
             </p>
           </li>
@@ -219,7 +219,7 @@
                <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price">30500 р.</p>
+              <del class="old-price">30500 р.</del>
               <a class="button" href="#">25500 р.</a>
             </p>
           </li>
@@ -232,7 +232,7 @@
             </p>
             <p class="catalog-item-action">
               <a class="button button-buy" href="#">Купить</a>
-               <a class="button button-bookmark" href="#">В закладки</a>
+              <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
               <a class="button" href="#">12500 р.</a>
@@ -247,10 +247,10 @@
             </p>
             <p class="catalog-item-action">
               <a class="button button-buy" href="#">Купить</a>
-               <a class="button button-bookmark" href="#">В закладки</a>
+              <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price">22500 р.</p>
+              <del class="old-price">22500 р.</del>
               <a class="button" href="#">15500 р.</a>
             </p>
           </li>
@@ -263,10 +263,10 @@
             </p>
             <p class="catalog-item-action">
               <a class="button button-buy" href="#">Купить</a>
-               <a class="button button-bookmark" href="#">В закладки</a>
+              <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
-              <p class="old-price">30500 р.</p>
+              <del class="old-price">30500 р.</del>
               <a class="button" href="#">25500 р.</a>
             </p>
           </li>
@@ -279,7 +279,7 @@
             </p>
             <p class="catalog-item-action">
               <a class="button button-buy" href="#">Купить</a>
-               <a class="button button-bookmark" href="#">В закладки</a>
+              <a class="button button-bookmark" href="#">В закладки</a>
             </p>
             <p class="catalog-item-price">
               <a class="button" href="#">12500 р.</a>
@@ -288,7 +288,7 @@
         </ul>
         <ul class="pagination">
           <li class="pagination-item pagination-item-current">
-            <span>1</span>
+            1
           </li>
           <li class="pagination-item">
             <a href="#">2</a>
@@ -343,14 +343,14 @@
             <li><a class="social-button social-button-instagram" href="#">Инстраграм</a></li>
           </ul>
         </div>
-        <p class="footer-feedback">
+        <div class="footer-feedback">
           <p>Обратная связь:</p>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
           <p>Разработано:</p>
           <a href="https://htmlacademy.ru">HTML Academy</a>
-        </p>
+        </div>
       </div>
 
     </footer>
