@@ -15,7 +15,7 @@
         <p class="search">Поиск
           <form class="login-form" action="https://echo.htmlacademy.ru" method="get">
             <input type="search" name="search-param">
-            <button class="start-search" class="submit">Начать поиск</button>
+            <button class="start-search" type="submit">Начать поиск</button>
           </form>
         </p>
         <p class="bookmarks">
@@ -78,8 +78,8 @@
                 <input type="range" min="0" max="100000" name="filter-range" step="10000" value="30000">
               </li>
               <li class="filters-option">
-                <input class="range-number-field" type="number" name="filter-price-begin" min="0" max="100000" step="5000" aria-label="Начальное значение цены" value="0">-
-                <input class="range-number-field" type="number" name="filter-price-end" min="0" max="100000" step="5000" aria-label="Конечное значение цены" value="30000">
+                <input class="range-number-field" type="number" name="filter-price-begin" min="0" max="100000" step="5000" value="0">-
+                <input class="range-number-field" type="number" name="filter-price-end" min="0" max="100000" step="5000" value="30000">
               </li>
             </ul>
           </fieldset>
@@ -131,13 +131,13 @@
           <p>Сортировка:</p>
           <ul class="control-list">
             <li class="control-item">
-              <button class="sort-by-price"  href="#">По цене</button>
+              <button class="sort-by-price">По цене</button>
             </li>
             <li class="control-item">
-              <button class="sort-by-type"  href="#">По типу</button>
+              <button class="sort-by-type">По типу</button>
             </li>
             <li class="control-item">
-              <button class="sort-by-functions" href="#">По функционалу</button>
+              <button class="sort-by-functions">По функционалу</button>
             </li>
           </ul>
           <button class="sort-up">По возрастанию</button>
