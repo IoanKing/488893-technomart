@@ -1,0 +1,69 @@
+a,
+a.button,
+input,
+button,
+button.button {
+  outline: 1px solid gold;
+}
+
+a:focus,
+a.button:focus,
+input:focus,
+button:focus,
+button.button:focus {
+  outline: 3px solid lightskyblue;
+}
+
+.button {
+  outline: 3px dotted red;
+}
+
+.catalog-item a {
+  display: block;
+}
+
+.filters-option {
+  text-transform: uppercase;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content-current {
+  display: block;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.filters-option {
+  list-style: none;
+} */
+
+/* .catalog-item-action {
+  display: none;
+  width: 130px;
+  height: 120px;
+}
+
+.catalog-item-image {
+  display: block;
+  width: 130px;
+  height: 120px;
+}
+
+.catalog-item:hover .catalog-item-image,
+.active-item .catalog-item-image {
+  display: none;
+}
+
+.catalog-item:hover .catalog-item-action,
+.active-item .catalog-item-action {
+  display: block;
+} */
