@@ -1,69 +1,589 @@
-/* a,
-a.button,
-input,
-button,
-button.button {
-  outline: 1px solid gold;
+/* ========================== */
+/* Оглавление                 */
+/* 1. Общие правила           */
+/* 2. Header                  */
+/* 3. Главная навигация       */
+/* 4. Содержимое              */
+/* 5. Футер                   */
+/* ========================== */
+
+/* ========================== */
+/* 1. Общие правила           */
+/* ========================== */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #000000;
+
+  background-color: #ffffff;
+  /* временный фон */
+  /* background-color: #999999; */
 }
 
-a:focus,
-a.button:focus,
-input:focus,
-button:focus,
-button.button:focus {
-  outline: 3px solid lightskyblue;
+a {
+  text-decoration: none;
 }
 
-.button {
-  outline: 3px dotted red;
+.container {
+  width: 940px;
+  margin: 0 auto;
 }
 
-.catalog-item a {
+/* ========================== */
+/* 2. Header                  */
+/* ========================== */
+.main-header {
+  background-color: #f1f5f7;
+}
+
+.user-service-bar {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.user-service-bar a {
+  color: #ffffff;
+}
+
+.header-logo {
   display: block;
+  width: 220px;
+  height: 47px;
+
+  text-align: center;
+
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.3);
 }
 
-.filters-option {
+.header-logo:hover,
+.header-logo:focus,
+.header-logo:active {
+  background-color: #ca2c37;
+}
+
+.search {
+  color: #ffffff;
+
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.search:focus,
+.search:active,
+input[type="search"]:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.search::placeholder { /* Chrome, Firefox, Opera, Safary */
+  color: #ffffff;
+}
+
+.search:-moz-placeholder { /* Firefox 18+ */
+  color: #ffffff;
+  opacity: 1;
+}
+
+.search::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+  opacity: 1;
+}
+
+.search:-ms-input-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+}
+
+.search::-ms-input-placeholder { /* Firefox 19+ */
+  color: #ffffff;
+}
+
+.bookmarks a,
+.cart a {
+  background-color: transparent;
+}
+
+.bookmarks a:hover,
+.bookmarks a:focus,
+.cart a:hover,
+.cart a:focus {
+  background-color: #212a3a;
+}
+
+.bookmarks a:active,
+.cart a:active {
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+.buy a {
+  background-color: #63a63e;
+}
+
+.buy a:hover,
+.buy a:focus {
+  background-color: #5fbb2d;
+}
+
+.buy a:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.header-title {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-weight: normal;
+  color: #ee3643;
+}
+
+.header-main-section .phone {
+  padding: 5px 10px;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #e9292a;
+
+  border: 3px solid #ffffff;
+}
+
+.header-main-section .adress {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #32425c;
+}
+
+.user-navigation {
+  list-style: none;
+  padding-left: 0;
+}
+
+.login-link,
+.registration-link {
+  padding: 5px 10px;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: normal;
+  color: #000000;
+
+  background-color: white;
+  border: 3px solid #ffffff;
+}
+
+.login-link:hover,
+.registration-link:hover {
+  color: #ee3643;
+}
+
+.login-link:active,
+.registration-link:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+/* ========================== */
+/* 3. Главная навигация       */
+/* ========================== */
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: normal;
+
+  background-color: #293449;
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.site-navigation a {
+  color: white;
+}
+
+.site-navigation a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ========================== */
+/* 4. Содержимое              */
+/* ========================== */
+
+.promo,
+.features {
+  color: #ffffff;
+}
+
+.promo-list,
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.promo .button,
+.features .button,
+.popular-goods .button,
+.popular-manufacturers .button {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
 }
 
-.tab-content {
-  display: none;
+.promo .button:hover,
+.promo .button:focus,
+.features .button:hover,
+.features .button:focus {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.tab-content-current {
-  display: block;
-} */
-
-/* .visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+.promo .button:active,
+.features .button:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.filters-option {
+.promo-materials {
+  background-color: #f6b22d;
+}
+
+.promo-instruments {
+  background-color: #3bbce3;
+}
+
+.promo-tech {
+  background-color: #dc91d8;
+}
+
+.promo-item h3,
+.feature-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.slider-tab {
   list-style: none;
-} */
-
-/* .catalog-item-action {
-  display: none;
-  width: 130px;
-  height: 120px;
+  padding-left: 0;
 }
 
-.catalog-item-image {
-  display: block;
-  width: 130px;
-  height: 120px;
+.slider-tab .tab-content,
+.slider-tab .tab-content-current {
+  background-color: #dddddd;
 }
 
-.catalog-item:hover .catalog-item-image,
-.active-item .catalog-item-image {
-  display: none;
+.slider-item-drills {
+  background-image: url('../img/slider-1.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
-.catalog-item:hover .catalog-item-action,
-.active-item .catalog-item-action {
-  display: block;
-} */
+.slider-item-punchers {
+  background-image: url('../img/slider-2.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.slider-item-punchers {
+
+}
+
+.feature-slider h3 {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.feature-slider p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.button.slider-button {
+  text-align: center;
+
+  background-color: #ee3643;
+}
+
+.button.slider-button:hover,
+.button.slider-button:focus {
+  background-color: #ca2c37;
+}
+
+.button.slider-button:active {
+  background-color: #ba2732;
+}
+
+/* ДОПИСАТЬ СЛАЦДЕР */
+
+.feature-discont {
+  background-color: #8ed78f;
+}
+
+.feature-delivery {
+  background-color: #ffc047;
+}
+
+.popular-goods h2,
+.popular-manufacturers h2,
+.services h2,
+.about-us h2,
+.contact-info h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.popular-goods h2,
+.popular-manufacturers h2 {
+  background-color: #f9f5f0;
+}
+
+.button.catalog-button {
+  text-align: center;
+
+  background-color: #ee3643;
+}
+
+.button.catalog-button:hover,
+.button.catalog-button:focus {
+  background-color: #ca2c37;
+}
+
+.button.catalog-button:active {
+  background-color: #ba2732;
+}
+
+.catalog-list {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.catalog-item {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
+  box-shadow: 0 5px 25px 0 rgba(41, 52, 73, 0.6);
+}
+
+.catalog-item a {
+  color: inherit;
+}
+
+.catalog-item-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+}
+
+.old-price {
+  color: #a9a9a9;
+}
+
+.catalog-item-price .button {
+  color: white;
+  text-align: center;
+
+  background-color: #ee3643;
+}
+
+.catalog-item-price .button:hover,
+.catalog-item-price .button:focus {
+  background-color: #ca2c37;
+}
+
+.catalog-item-price .button:active {
+  background-color: #ba2732;
+}
+
+.manufacturers-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.manufacture-item {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.manufacture-item:hover,
+.manufacture-item:focus {
+  box-shadow: 0 5px 25px 0 rgba(41, 52, 73, 0.6);
+}
+
+.manufacture-item:active {
+  box-shadow: 0 5px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.manufacture-item:active a {
+  opacity: 0.5;
+}
+
+.services p,
+.about-us p,
+.contact-info p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
+}
+
+.services-tabs {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services-tabs a {
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.services-tabs .tab-item-current a {
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+.tab-content h3,
+.tab-content-current h3 {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+}
+
+.tab-content .button,
+.tab-content-current .button {
+
+}
+
+.tab-content .button,
+.tab-content-current .button {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.tab-content .button:hover,
+.tab-content-current .button:hover,
+.tab-content .button:focus,
+.tab-content-current .button:focus {
+  background-color: #ca2c37;
+}
+
+.tab-content .button:active,
+.tab-content-current .button:active {
+  background-color: #ba2732;
+}
+
+.about-us ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-us li {
+  position: relative;
+
+  padding-left: 35px;
+}
+
+.about-us li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 25px;
+
+  border-bottom: 2px solid #ee3643;
+}
+
+.about-us .button {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.about-us .button:hover,
+.about-us:focus {
+  background-color: #ca2c37;
+}
+
+.about-us .button:active {
+  background-color: #ba2732;
+}
+
+.contact-info .button {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.contact-info .button:hover,
+.contact-info:focus {
+  background-color: #ca2c37;
+}
+
+.contact-info .button:active {
+  background-color: #ba2732;
+}
+
+/* ========================== */
+/* 5. Футер                   */
+/* ========================== */
+
