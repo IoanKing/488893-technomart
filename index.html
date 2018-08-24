@@ -17,13 +17,13 @@
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <input class="search" type="search" name="search-param" placeholder="Поиск:" aria-label="Поиск">
-            <button class="start-search" type="submit">Начать поиск</button>
+            <button class="start-search visually-hidden" type="submit">Начать поиск</button>
           </form>
           <p class="bookmarks">
             <a class="button" href="#">Закладки: 0</a>
           </p>
           <p class="cart">
-            <a class="button active" href="#">Корзина: 0</a>
+            <a class="button" href="#">Корзина: 0</a>
           </p>
           <p class="buy">
             <a class="button" href="#">Оформить заказ</a>
@@ -33,8 +33,8 @@
 
       <div class="header-main-section container">
         <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонт</h1>
-        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p class="adress" >г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p><a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <span class="adress" >г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
         <ul class="user-navigation">
           <li>
             <a class="login-link" href="#">Вход</a>
@@ -59,9 +59,9 @@
 
     </header>
 
-    <main class="container">
+    <main>
 
-      <section class="promo">
+      <section class="promo container">
         <h2 class="visually-hidden">Товары</h2>
         <ul class="promo-list">
           <li class="promo-item promo-materials">
@@ -78,7 +78,7 @@
           </li>
         </ul>
       </section>
-      <section class="features">
+      <section class="features container">
         <h2 class="visually-hidden">Услуги и товары</h2>
         <ul class="feature-list">
           <li class="feature-slider">
@@ -117,7 +117,7 @@
         </ul>
       </section>
 
-      <section class="popular-goods">
+      <section class="popular-goods container">
         <h2>Популярные товары:</h2>
         <a class="button catalog-button" href="catalog.html">Все популярные товары</a>
         <ul class="catalog-list">
@@ -171,100 +171,108 @@
         </ul>
       </section>
 
-      <section class="popular-manufacturers">
+      <section class="popular-manufacturers container">
         <h2>Популярные производители: </h2>
         <a class="button catalog-button" href="#">Все производители</a>
         <ul class="manufacturers-list">
           <li class="manufacture-item">
             <a href="#" aria-label="Перейти на сайт производителя: Bosch">
-              <img src="img/Bosch.jpg" width="126" height="37" alt="Bosch">
+              <img src="img/Bosch.jpg" width="200" height="145" alt="Bosch">
             </a>
           </li>
           <li class="manufacture-item">
             <a href="#" aria-label="Перейти на сайт производителя: Thakita">
-              <img src="img/Makita.jpg" width="123" height="40" alt="Thakita">
+              <img src="img/Makita.jpg" width="200" height="145" alt="Thakita">
             </a>
           </li>
           <li class="manufacture-item">
             <a href="#" aria-label="Перейти на сайт производителя: Dewalt">
-              <img src="img/DeWALT.jpg" width="146" height="44" alt="Dewalt">
+              <img src="img/DeWALT.jpg" width="200" height="145" alt="Dewalt">
             </a>
           </li>
           <li class="manufacture-item">
             <a href="#" aria-label="Перейти на сайт производителя: Интерскол">
-              <img src="img/Interskol.jpg" width="200" height="88" alt="Интерскол">
+              <img src="img/Interskol.jpg" width="200" height="145" alt="Интерскол">
             </a>
           </li>
           <li class="manufacture-item">
             <a href="#" aria-label="Перейти на сайт производителя: Hitachi">
-              <img src="img/Hitachi.jpg" width="169" height="31" alt="Hitachi">
+              <img src="img/Hitachi.jpg" width="200" height="145" alt="Hitachi">
             </a>
           </li>
           <li class="manufacture-item">
             <a href="#" aria-label="Перейти на сайт производителя: LG">
-              <img src="img/LG.jpg" width="121" height="73" alt="LG">
+              <img src="img/LG.jpg" width="200" height="145" alt="LG">
             </a>
           </li>
           <li class="manufacture-item">
             <a href="#" aria-label="Перейти на сайт производителя: AEG">
-              <img src="img/AEG.jpg" width="151" height="96" alt="AEG">
+              <img src="img/AEG.jpg" width="200" height="145" alt="AEG">
             </a>
           </li>
           <li class="manufacture-item">
             <a href="#" aria-label="Перейти на сайт производителя: Metabo">
-              <img src="img/Metabo.jpg" width="204" height="69" alt="Metabo">
+              <img src="img/Metabo.jpg" width="200" height="145" alt="Metabo">
             </a>
           </li>
         </ul>
       </section>
 
       <section class="services">
-        <h2>Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="services-tabs">
-          <li class="tab-item-current">
-            <a href="#tab-delivery">Доставка</a>
-          </li>
-          <li class="tab-item">
-            <a href="#tab-guarantee">Гарантия</a>
-          </li>
-          <li class="tab-item">
-            <a href="#tab-credit">Кредит</a>
-          </li>
-        </ul>
-        <div class="tab-content-current tab-delivery" id="tab-delivery">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-        </div>
-        <div class="tab-content tab-guarantee" id="tab-guarantee">
-          <h3>Гарантия</h3>
-          <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br> Дом уж восстановите как-нибудь сами.</p>
-        </div>
-        <div class="tab-content tab-credit" id="tab-credit">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на помощь.</p>
-          <a class="button" href="#">Отправить заявку</a>
+        <div class="container">
+          <h2>Сервисы</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="services-layout">
+            <ul class="services-tabs">
+              <li class="tab-item-current">
+                <a href="#tab-delivery">Доставка</a>
+              </li>
+              <li class="tab-item">
+                <a href="#tab-guarantee">Гарантия</a>
+              </li>
+              <li class="tab-item">
+                <a href="#tab-credit">Кредит</a>
+              </li>
+            </ul>
+            <section class="tabs-services-content">
+              <div class="tab-services-current tab-delivery" id="tab-delivery">
+                <h3>Доставка</h3>
+                <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+              </div>
+              <div class="tab-services tab-guarantee" id="tab-guarantee">
+                <h3>Гарантия</h3>
+                <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br> Дом уж восстановите как-нибудь сами.</p>
+              </div>
+              <div class="tab-services tab-credit" id="tab-credit">
+                <h3>Кредит</h3>
+                <p>Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на помощь.</p>
+                <a class="button" href="#">Отправить заявку</a>
+              </div>
+            </section>
+          </div>
         </div>
       </section>
 
-      <section class="about-us">
-        <h2>Компания «Техномарт»</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>Техномарт работает со многими транспортными компаниями: </p>
-        <ul>
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="button" href="#">Подробнее о компании</a>
-      </section>
+      <div class="info-layout container">
+        <section class="about-us">
+          <h2>Компания «Техномарт»</h2>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>Техномарт работает со многими транспортными компаниями: </p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="#">Подробнее о компании</a>
+        </section>
 
-      <section class="contact-info">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <img src="img/map-small.jpg" width="300" height="158" alt="Карта проезда">
-        <a class="button" href="#">Заблудились? Напишите нам!</a>
-      </section>
+        <section class="contact-info">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+          <img src="img/map-small.jpg" width="300" height="158" alt="Карта проезда">
+          <a class="button" href="#">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
 
     </main>
 
@@ -272,10 +280,10 @@
 
       <div class="footer-top container">
         <a class="footer-logo">
-          <img src="img/logo.svg" width="150" height="75" alt="Техномарт">
+          <img src="img/logo.svg" width="145" height="68" alt="Техномарт">
         </a>
         <nav class="footer-navigation-primary">
-          <ul class="site-navigation">
+          <ul class="footer-navigation">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -283,8 +291,7 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <nav class="footer-navigation-secondary" >
           <ul class="catalog-navigation">
             <li><a href="#">Материалы</a></li>
@@ -295,10 +302,10 @@
         </nav>
       </div>
 
-      <div class="footer-bottom container">
-        <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
-        <div class="footer-social">
-          <ul>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
+          <ul class="footer-social">
             <li>
               <a class="social-button social-button-vk" href="#">ВКонтакте</a>
             </li>
@@ -309,15 +316,15 @@
               <a class="social-button social-button-instagram" href="#">Инстраграм</a>
             </li>
           </ul>
+          <p class="footer-feedback">
+            Обратная связь:
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="footer-copyright">
+            Разработано —
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </p>
         </div>
-        <p class="footer-feedback">
-          Обратная связь:
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="footer-copyright">
-          Разработано:
-          <a href="https://htmlacademy.ru">HTML Academy</a>
-        </p>
       </div>
 
     </footer>
@@ -330,8 +337,7 @@
         <label for="feedback-email">Ваш e-mail:</label>
         <input type="text" name="feedback-email" placeholder="email@example.com" id="feedback-email">
         <label for="feedback-text">Текст письма:</label>
-        <textarea name="feedback-text" placeholder="В свободной форме" rows="5" id="feedback-text">
-        </textarea>
+        <textarea name="feedback-text" placeholder="В свободной форме" rows="5" id="feedback-text"></textarea>
         <button class="button button-full-width" type="submit">Отправить</button>
       </form>
       <button class="modal-close">Закрыть</button>
