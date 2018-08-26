@@ -1,0 +1,170 @@
+/* * {
+  color: transparent!important;
+  background-color: transparent!important;
+  border-color: transparent!important;
+} */
+
+.main-header {
+  position: relative;
+  outline: 2px solid darkblue;
+  background-color: rgba(66, 134, 244, 0.2)!important;
+}
+
+.main-header::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '.' attr(class);
+  padding: 0 15px;
+  color: white!important;
+  background-color: darkblue!important;
+  font-size: 14px!important;
+  z-index: 100;
+}
+
+.user-service-bar {
+  position: relative;
+  outline: 2px solid darkred;
+  background-color: rgba(244, 66, 66, 0.2)!important;
+}
+
+.user-service-bar::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '.' attr(class);
+  padding: 0 15px;
+  color: white!important;
+  background-color: darkred!important;
+  font-size: 14px!important;
+  z-index: 100;
+}
+
+.main-footer {
+  position: relative;
+  outline: 2px solid darkblue;
+  background-color: rgba(66, 134, 244, 0.2)!important;
+}
+
+.main-footer::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '.' attr(class);
+  padding: 0 15px;
+  color: white!important;
+  background-color: darkblue!important;
+  font-size: 14px!important;
+  z-index: 100;
+}
+
+.container {
+  position: relative;
+  outline: 2px solid #f9ff4f;
+  background-color: rgba(249, 255, 79, 0.2)!important;
+}
+
+.container::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '.' attr(class);
+  padding: 0 15px;
+  color: black!important;
+  background-color: #f9ff4f!important;
+  font-size: 14px!important;
+  z-index: 100;
+}
+
+.services {
+  position: relative;
+  outline: 2px solid darkblue;
+  background-color: rgba(66, 134, 244, 0.2)!important;
+}
+
+.services::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '.' attr(class);
+  padding: 0 15px;
+  color: white!important;
+  background-color: darkblue!important;
+  font-size: 14px!important;
+  z-index: 100;
+}
+
+.header-title,
+.contact-info,
+.user-navigation,
+.promo-item,
+.feature-item,
+.feature-slider,
+.catalog-item,
+.manufacture-item,
+.services-tabs,
+.services-inner,
+.about-us,
+.footer-navigation-primary,
+.footer-navigation-secondary,
+.footer-top .adress,
+.footer-bottom p,
+.footer-social,
+.filters,
+.catalog,
+.modal-write-us,
+.modal-map {
+  position: relative;
+  outline: 2px solid darkred;
+  background-color: rgba(244, 65, 65, 0.2)!important;
+}
+
+.header-title::before,
+.contact-info::before,
+.user-navigation::before,
+.promo-item::before,
+.feature-item::before,
+.feature-slider::before,
+.catalog-item::before,
+.manufacture-item::before,
+.services-tabs::before,
+.services-inner::before,
+.about-us::before,
+.footer-navigation-primary::before,
+.footer-navigation-secondary::before,
+.footer-top .adress::before,
+.footer-bottom p::before,
+.footer-social::before,
+.filters::before,
+.catalog::before,
+.modal-write-us::before,
+.modal-map::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '.' attr(class);
+  padding: 0 15px;
+  color: white!important;
+  background-color: darkred!important;
+  font-size: 14px!important;
+  z-index: 100;
+}
+
+.catalog .catalog-item {
+  position: relative;
+  outline: 2px solid darkblue;
+  background-color: rgba(66, 134, 244, 0.2)!important;
+}
+
+.catalog .catalog-item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '.' attr(class);
+  padding: 0 15px;
+  color: white!important;
+  background-color: darkblue!important;
+  font-size: 14px!important;
+  z-index: 100;
+}
+

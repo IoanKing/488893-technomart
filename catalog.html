@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Временная обводка для сетки -->
+    <link rel="stylesheet" href="css/outline.css">
+  </head>
   </head>
   <body>
     <header class="main-header">
@@ -19,22 +22,18 @@
             <input class="search" type="search" name="search-param" placeholder="Поиск:" aria-label="Поиск">
             <button class="start-search visually-hidden" type="submit">Начать поиск</button>
           </form>
-          <p class="bookmarks">
-            <a class="button" href="#">Закладки: 0</a>
-          </p>
-          <p class="cart">
-            <a class="button active" href="#">Корзина: 10</a>
-          </p>
-          <p class="buy">
-            <a class="button" href="#">Оформить заказ</a>
-          </p>
+          <a class="bookmarks button" href="#">Закладки: 0</a>
+          <a class="cart button active" href="#">Корзина: 10</a>
+          <a class="buy button" href="#">Оформить заказ</a>
         </div>
       </div>
 
       <div class="header-main-section container">
         <h2 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонт</h2>
-        <p><a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <span class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
+        <div class="contact-info">
+          <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
         <ul class="user-navigation authorized">
           <li class="user-name">
             <p>Равшан Джамшутович</p>
@@ -69,7 +68,9 @@
           <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
 
-        <h1 class="page-title">Перфораторы</h1>
+        <div class="section-header">
+          <h1 class="page-title">Перфораторы</h1>
+        </div>
 
         <div class="catalog-layout">
           <section class="filters">
@@ -332,7 +333,7 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <nav class="footer-navigation-secondary">
           <ul class="catalog-navigation">
             <li><a href="#">Материалы</a></li>
@@ -345,7 +346,7 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
+          <p class="footer-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
           <ul class="footer-social">
             <li>
               <a class="social-button social-button-vk" href="#">ВКонтакте</a>
@@ -358,11 +359,11 @@
             </li>
           </ul>
           <p class="footer-feedback">
-            Обратная связь:
+            Обратная связь:<br>
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <p class="footer-copyright">
-            Разработано —
+          <p class="footer-develop">
+            Разработано —<br>
             <a href="https://htmlacademy.ru">HTML Academy</a>
           </p>
         </div>

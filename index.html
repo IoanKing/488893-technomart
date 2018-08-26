@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Временная обводка для сетки -->
+    <link rel="stylesheet" href="css/outline.css">
   </head>
   <body>
     <header class="main-header">
@@ -17,27 +19,23 @@
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <input class="search" type="search" name="search-param" placeholder="Поиск:" aria-label="Поиск">
-            <button class="start-search visually-hidden" type="submit">Начать поиск</button>
+            <button class="search-button visually-hidden" type="submit">Начать поиск</button>
           </form>
-          <p class="bookmarks">
-            <a class="button" href="#">Закладки: 0</a>
-          </p>
-          <p class="cart">
-            <a class="button" href="#">Корзина: 0</a>
-          </p>
-          <p class="buy">
-            <a class="button" href="#">Оформить заказ</a>
-          </p>
+          <a class="bookmarks button" href="#">Закладки: 0</a>
+          <a class="cart button" href="#">Корзина: 0</a>
+          <a class="buy button" href="#">Оформить заказ</a>
         </div>
       </div>
 
       <div class="header-main-section container">
-        <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонт</h1>
-        <p><a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <span class="adress" >г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
+        <h1 class="header-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h1>
+        <div class="contact-info">
+          <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
         <ul class="user-navigation">
           <li>
-            <a class="login-link" href="#">Вход</a>
+            <a class="login-link" href="#">Войти</a>
           </li>
           <li>
             <a class="registration-link" href="#">Регистрация</a>
@@ -64,7 +62,7 @@
       <section class="promo container">
         <h2 class="visually-hidden">Товары</h2>
         <ul class="promo-list">
-          <li class="promo-item promo-materials">
+          <li class="promo-item promo-materials new-item">
             <h3>Материалы</h3>
             <a class="button" href="#">На любой вкус</a>
           </li>
@@ -82,29 +80,28 @@
         <h2 class="visually-hidden">Услуги и товары</h2>
         <ul class="feature-list">
           <li class="feature-slider">
-            <ul class="slider-tab">
-              <li class="tab-item">
-                <input type="radio" name="slider-tab" value="Punchers" id="slider-tab-punchers">
-                <label class="visually-hidden" for="slider-tab-punchers">Слайд Перфораторы</label>
-              </li>
-              <li class="tab-item-current">
-                <input type="radio" name="slider-tab" value="drill" id="slider-tab-drill" checked>
-                <label class="visually-hidden" for="slider-tab-drill">Слайд Дрели</label>
-              </li>
-            </ul>
-            <div class="tab-content-current slider-item-drills" id="Drills" >
-              <h3>Дрели</h3>
-              <p>Соседям на радость!</p>
-              <button class="button slider-button-back">Назад</button>
-              <button class="button slider-button-next">Вперед</button>
+            <input type="radio" id="slider-tab-punchers" name="toggle" checked>
+            <input type="radio" id="slider-tab-drills" name="toggle">
+            <div class="slider-controls">
+              <label for="slider-tab-punchers">Слайд Перфораторы</label>
+              <label for="slider-tab-drills">Слайд Дрели</label>
             </div>
-            <div class="tab-content slider-item-punchers active" id="Punchers">
-              <h3>Перфораторы</h3>
-              <p>Настоящие мужские игрушки!</p>
-              <button class="button slider-button-back">Назад</button>
-              <button class="button slider-button-next">Вперед</button>
+            <div class="slider-inner">
+              <div class="slider-slides slider-item-drills" id="Drills" >
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+                <button class="slider-button-back">Назад</button>
+                <button class="slider-button-next">Вперед</button>
+                <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+              </div>
+              <div class="slider-slides slider-item-punchers active" id="Punchers">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки!</p>
+                <button class="slider-button-back">Назад</button>
+                <button class="slider-button-next">Вперед</button>
+                <a class="button slider-button" href="catalog.html">Открыть каталог</a>
+              </div>
             </div>
-            <a class="button slider-button" href="catalog.html">Открыть каталог</a>
           </li>
           <li class="feature-item feature-discont">
             <h3>Скидка 50%</h3>
@@ -118,8 +115,10 @@
       </section>
 
       <section class="popular-goods container">
-        <h2>Популярные товары:</h2>
-        <a class="button catalog-button" href="catalog.html">Все популярные товары</a>
+        <div class="section-header">
+          <h2>Популярные товары:</h2>
+          <a class="button catalog-button" href="catalog.html">Все популярные товары</a>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="#">
@@ -172,8 +171,10 @@
       </section>
 
       <section class="popular-manufacturers container">
-        <h2>Популярные производители: </h2>
-        <a class="button catalog-button" href="#">Все производители</a>
+        <div class="section-header">
+          <h2>Популярные производители: </h2>
+          <a class="button catalog-button" href="#">Все производители</a>
+        </div>
         <ul class="manufacturers-list">
           <li class="manufacture-item">
             <a href="#" aria-label="Перейти на сайт производителя: Bosch">
@@ -222,28 +223,25 @@
         <div class="container">
           <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <div class="services-layout">
-            <ul class="services-tabs">
-              <li class="tab-item-current">
-                <a href="#tab-delivery">Доставка</a>
-              </li>
-              <li class="tab-item">
-                <a href="#tab-guarantee">Гарантия</a>
-              </li>
-              <li class="tab-item">
-                <a href="#tab-credit">Кредит</a>
-              </li>
-            </ul>
-            <section class="tabs-services-content">
-              <div class="tab-services-current tab-delivery" id="tab-delivery">
+          <div class="services-slider">
+            <input class="visually-hidden" type="radio" id="tab-delivery" name="services-tab" checked>
+            <input class="visually-hidden" type="radio" id="tab-guarantee" name="services-tab">
+            <input class="visually-hidden" type="radio" id="tab-credit" name="services-tab">
+            <div class="services-tabs">
+              <label for="tab-delivery">Доставка</label>
+              <label for="tab-guarantee">Гарантия</label>
+              <label for="tab-credit">Кредит</label>
+            </div>
+            <section class="services-inner">
+              <div class="services-slides slider-tab-delivery">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
               </div>
-              <div class="tab-services tab-guarantee" id="tab-guarantee">
+              <div class="services-slides slider-tab-guarantee">
                 <h3>Гарантия</h3>
                 <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br> Дом уж восстановите как-нибудь сами.</p>
               </div>
-              <div class="tab-services tab-credit" id="tab-credit">
+              <div class="services-slides slider-tab-credit">
                 <h3>Кредит</h3>
                 <p>Залезть в долговую яму стало проще! <br>Кредитные консультанты придут вам на помощь.</p>
                 <a class="button" href="#">Отправить заявку</a>
@@ -262,6 +260,7 @@
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
+            <li>Деловые линии</li>
           </ul>
           <a class="button" href="#">Подробнее о компании</a>
         </section>
@@ -269,7 +268,7 @@
         <section class="contact-info">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-          <img src="img/map-small.jpg" width="300" height="158" alt="Карта проезда">
+          <p><img src="img/map-small.jpg" width="300" height="158" alt="Карта проезда"></p>
           <a class="button" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
@@ -291,7 +290,7 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+        <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <nav class="footer-navigation-secondary" >
           <ul class="catalog-navigation">
             <li><a href="#">Материалы</a></li>
@@ -304,7 +303,7 @@
 
       <div class="footer-bottom">
         <div class="container">
-          <p>© 2010–2017 Компания «Техномарт» Все права защищены</p>
+          <p class="footer-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
           <ul class="footer-social">
             <li>
               <a class="social-button social-button-vk" href="#">ВКонтакте</a>
@@ -317,11 +316,11 @@
             </li>
           </ul>
           <p class="footer-feedback">
-            Обратная связь:
+            Обратная связь:<br>
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
-          <p class="footer-copyright">
-            Разработано —
+          <p class="footer-develop">
+            Разработано —<br>
             <a href="https://htmlacademy.ru">HTML Academy</a>
           </p>
         </div>
