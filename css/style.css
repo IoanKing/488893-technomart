@@ -968,14 +968,10 @@ input[type="search"]:focus {
 }
 
 .about-us p,
-.contact-info p {
+.contact-info p,
+.contact-info img  {
   margin: 12px 0;
 }
-
-/* .about-us p,
-.contact-info p {
-  margin: 24px 0;
-} */
 
 .about-us ul {
   list-style: none;
@@ -1529,6 +1525,8 @@ input:disabled + label {
 
 .footer-feedback,
 .footer-develop {
+  max-width: 180px;
+
   padding: 0 25px;
   margin: 0;
 }

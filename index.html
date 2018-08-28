@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Временная обводка для сетки -->
-    <link rel="stylesheet" href="css/outline.css">
+    <!-- <link rel="stylesheet" href="css/outline.css"> -->
   </head>
   <body>
     <header class="main-header">
@@ -78,8 +78,8 @@
       </section>
       <section class="features container">
         <h2 class="visually-hidden">Услуги и товары</h2>
-        <ul class="feature-list">
-          <li class="feature-slider">
+        <div class="feature-list">
+          <div class="feature-slider">
             <input type="radio" id="slider-tab-punchers" name="toggle" checked>
             <input type="radio" id="slider-tab-drills" name="toggle">
             <div class="slider-controls">
@@ -102,16 +102,18 @@
                 <a class="button slider-button" href="catalog.html">Открыть каталог</a>
               </div>
             </div>
-          </li>
-          <li class="feature-item feature-discont">
-            <h3>Скидка 50%</h3>
-            <a class="button" href="#">На 350 товаров</a>
-          </li>
-          <li class="feature-item feature-delivery">
-            <h3>Доставка</h3>
-            <a class="button" href="#">Бесплатно</a>
-          </li>
-        </ul>
+          </div>
+          <div class=feature-group">
+            <div class="feature-item feature-discont">
+              <h3>Скидка 50%</h3>
+              <a class="button" href="#">На 350 товаров</a>
+            </div>
+            <div class="feature-item feature-delivery">
+              <h3>Доставка</h3>
+              <a class="button" href="#">Бесплатно</a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="popular-goods container">
@@ -268,7 +270,7 @@
         <section class="contact-info">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-          <p><img src="img/map-small.jpg" width="300" height="158" alt="Карта проезда"></p>
+          <img src="img/map-small.jpg" width="300" height="158" alt="Карта проезда">
           <a class="button" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
@@ -316,11 +318,11 @@
             </li>
           </ul>
           <p class="footer-feedback">
-            Обратная связь:<br>
+            Обратная связь:
             <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="footer-develop">
-            Разработано —<br>
+            Разработано —
             <a href="https://htmlacademy.ru">HTML Academy</a>
           </p>
         </div>
