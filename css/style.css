@@ -1549,6 +1549,7 @@ input:disabled + label {
 /* ========================== */
 
 .modal-write-us {
+  position: relative;
   width: 620px;
 
   font-size: 18px;
