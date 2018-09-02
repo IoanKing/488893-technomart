@@ -6,10 +6,59 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- Временная обводка для сетки -->
-    <!-- <link rel="stylesheet" href="css/outline.css"> -->
   </head>
-  <body>
+  <body class="inner-page">
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="icon-search" viewBox="0 0 17 17">
+          <path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5   C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2   C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/>
+        </symbol>
+        <symbol id="icon-bookmark" viewBox="0 0 17 17">
+          <path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
+    C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
+        </symbol>
+        <symbol id="icon-cart" viewBox="0 0 17 17">
+          <g>
+            <circle cx="4.5" cy="13.5" r="1.5"/>
+            <circle cx="12.5" cy="13.5" r="1.5"/>
+            <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
+          </g>
+        </symbol>
+        <symbol id="icon-login" viewBox="0 0 20 17">
+          <g>
+            <polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
+          </g>
+          <g>
+          <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+            v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
+          </g>
+        </symbol>
+        <symbol id="icon-logout" viewBox="0 0 20 17">
+          <g>
+            <path d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
+            <path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
+          </g>
+        </symbol>
+        <symbol id="icon-user" viewBox="0 0 20 18">
+          <g>
+            <path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+          </g>
+        </symbol>
+        <symbol id="icon-vk" viewBox="0 0 26 15">
+          <g>
+            <path d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
+          </g>
+        </symbol>
+        <symbol id="icon-facebook" viewBox="0 0 10.15 21.74">
+          <g>
+              <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"/>
+          </g>
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 21 21">
+          <g>
+            <path d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+          </g>
+        </symbol>
+      </svg>
     <header class="main-header">
 
       <div class="user-service-bar">
@@ -19,24 +68,40 @@
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <input class="search" type="search" name="search-param" placeholder="Поиск:" aria-label="Поиск">
-            <button class="start-search visually-hidden" type="submit">Начать поиск</button>
+            <button class="search-button" type="submit">
+              <svg class="icon" width="17" height="17">
+                <use class="icon-search" xlink:href="#icon-search" x="0" y="0" />
+              </svg>Начать поиск</button>
           </form>
-          <a class="bookmarks button" href="#">Закладки: 0</a>
-          <a class="cart button active" href="#">Корзина: 10</a>
+          <a class="bookmarks button" href="#">
+            <svg class="icon" width="17" height="17">
+              <use class="icon-bookmark" xlink:href="#icon-bookmark" x="0" y="0" />
+            </svg>Закладки: 0</a>
+          <a class="cart button active" href="#">
+            <svg class="icon" width="17" height="17">
+              <use class="icon-cart" xlink:href="#icon-cart" x="0" y="0" />
+            </svg>Корзина: 10</a>
           <a class="buy button" href="#">Оформить заказ</a>
         </div>
       </div>
 
       <div class="header-main-section container">
-        <h2 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонт</h2>
-        <div class="contact-info">
-          <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <h2 class="header-title">Интернет-магазин строительных материалов<br> и инструментов для ремонта</h2>
+        <div class="lead-info">
+          <a class="lead-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="lead-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="user-navigation authorized">
           <li class="user-name">
-            <p>Равшан Джамшутович</p>
-            <a class="logout-link" href="#">Выход</a>
+            <a class="user-link" href="#">
+              <svg class="icon" width="20" height="18">
+                <use class="icon-user" xlink:href="#icon-user" x="0" y="0" />
+              </svg>Равшан Джамшутович
+            </a>
+            <a class="logout-link" href="#">
+              <svg class="icon" width="20" height="17">
+                <use class="icon-logout" xlink:href="#icon-logout" x="0" y="0" />
+              </svg><span class="visually-hidden">Выход</span></a>
           </li>
           <li class="order-link"><a href="#">Мои заказы</a></li>
           <li class="profile-link"><a href="#">Личный кабинет</a></li>
@@ -61,32 +126,36 @@
 
       <div class="container">
         <ul class="breadcrumbs">
-          <li><a class="breadcrumbs-home" href="index.html">Главная</a></li>
+          <li><a class="breadcrumbs-home" href="index.html"><span class="visually-hidden">Главная</span></a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
 
-        <div class="section-header">
-          <h1 class="page-title">Перфораторы</h1>
-        </div>
+        <h1 class="page-title">Перфораторы</h1>
 
         <div class="catalog-layout">
           <section class="filters">
             <h2 class="visually-hidden">Фильтр по товарам:</h2>
             <p class="control-bar">Фильтр:</p>
             <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset>
+              <fieldset class="filter-price">
                 <legend>Цена:</legend>
-                <ul>
-                  <li class="filters-option">
-                    <input type="range" min="0" max="100000" name="filter-range" step="10000" value="30000">
-                  </li>
-                  <li class="filters-option filters-min-max">
-                    <input class="range-number-field" type="number" name="filter-price-begin" min="0" max="100000" step="5000" value="0">—
-                    <input class="range-number-field" type="number" name="filter-price-end" min="0" max="100000" step="5000" value="30000">
-                  </li>
-                </ul>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                </div>
+                <div class="filters-price-controls">
+                  <label for="min-price-input" class="visually-hidden">Мин.цена</label>
+                  <input class="min-price" name="min-price" type="text" value="0" id="min-price-input">—
+                  <label for=max-price-input" class="visually-hidden">Макс.цена</label>
+                  <input class="max-price" name="max-price" type="text" value="30000" id="min-price-input">
+                </div>
               </fieldset>
               <fieldset>
                 <legend>Производители:</legend>
@@ -145,152 +214,149 @@
                   <a class="sort-by-functions" href="?sort=func">По функционалу</a>
                 </li>
               </ul>
-              <div class="control-bar_sort">
-                <a class="sort-up-current" href="#" aria-label="по возрастанию">&#9650;</a>
-                <a class="sort-down" href="#" aria-label="по убыванию">&#9660;</a>
+              <div class="control-bar-sort">
+                <a class="sort-up active" href="#" aria-label="по возрастанию"><span class="visually-hidden">По возрастанию</span></a>
+                <a class="sort-down" href="#" aria-label="по убыванию"><span class="visually-hidden">По убыванию</span></a>
               </div>
             </div>
             <ul class="catalog-list">
               <li class="catalog-item">
-                <div class="catalog-item-info">
-                  <h3>Перфоратор BOSСH BFG 3000</h3>
-                  <p class="catalog-item-image">
-                    <img src="img/product-2.jpg" width="130" height="120" alt="Перфоратор BOSСH BFG 3000">
-                  </p>
+                <p class="catalog-actions">
+                  <a class="buttom catalog-buy" href="#">
+                    <svg class="icon" width="17" height="17">
+                      <use class="icon-cart" xlink:href="#icon-cart" x="0" y="0" />
+                    </svg>Купить</a>
+                  <a class="button catalog-bookmark" href="#">В закладки</a>
+                </p>
+                <div class="catalog-image">
+                  <img src="img/product-2.jpg" width="200" height="168"  alt="Перфоратор BOSСH BFG 2000">
                 </div>
-                <p class="catalog-item-action">
-                  <a class="button button-buy" href="#">Купить</a>
-                  <a class="button button-bookmark" href="#">В закладки</a>
-                </p>
-                <p class="catalog-item-price">
-                  <del class="old-price">22500 р.</del>
-                  <a class="button" href="#">15500 р.</a>
-                </p>
+                <p class="catalog-title">Перфоратор BOSСH BFG 3000</p>
+                <del class="catalog-disconts">22500 P.</del>
+                <p class="catalog-price" href="#">15500 Р.</p>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-info">
-                  <h3>Перфоратор BOSСH BFG 6000</h3>
-                  <p class="catalog-item-image">
-                    <img src="img/product-3.jpg" width="130" height="120" alt="Перфоратор BOSСH BFG 6000">
-                  </p>
+                <p class="catalog-actions">
+                  <a class="buttom catalog-buy" href="#">
+                    <svg class="icon" width="17" height="17">
+                      <use class="icon-cart" xlink:href="#icon-cart" x="0" y="0" />
+                    </svg>Купить</a>
+                  <a class="button catalog-bookmark" href="#">В закладки</a>
+                </p>
+                <div class="catalog-image">
+                  <img src="img/product-3.jpg" width="200" height="168"  alt="Перфоратор BOSСH BFG 2000">
                 </div>
-                <p class="catalog-item-action">
-                  <a class="button button-buy" href="#">Купить</a>
-                  <a class="button button-bookmark" href="#">В закладки</a>
-                </p>
-                <p class="catalog-item-price">
-                  <del class="old-price">30500 р.</del>
-                  <a class="button" href="#">25500 р.</a>
-                </p>
+                <p class="catalog-title">Перфоратор BOSСH BFG 6000</p>
+                <del class="catalog-disconts">30500 P.</del>
+                <p class="catalog-price" href="#">25500 Р.</p>
               </li>
-              <li class="catalog-item new-item active-item">
-                <div class="catalog-item-info">
-                  <h3>Перфоратор BOSСH BFG 2000</h3>
-                  <p class="catalog-item-image">
-                    <img src="img/product-4.jpg" width="130" height="120" alt="Перфоратор BOSСH BFG 2000">
-                  </p>
+              <li class="catalog-item active">
+                <div class="flag flag-new">Новинка</div>
+                <p class="catalog-actions">
+                  <a class="buttom catalog-buy" href="#">
+                    <svg class="icon" width="17" height="17">
+                      <use class="icon-cart" xlink:href="#icon-cart" x="0" y="0" />
+                    </svg>Купить</a>
+                  <a class="button catalog-bookmark" href="#">В закладки</a>
+                </p>
+                <div class="catalog-image">
+                  <img src="img/product-4.jpg" width="200" height="168"  alt="Перфоратор BOSСH BFG 2000">
                 </div>
-                <p class="catalog-item-action">
-                  <a class="button button-buy" href="#">Купить</a>
-                  <a class="button button-bookmark" href="#">В закладки</a>
-                </p>
-                <p class="catalog-item-price">
-                  <a class="button" href="#">12500 р.</a>
-                </p>
-              </li>
-              <li class="catalog-item">
-                <div class="catalog-item-info">
-                  <h3>Перфоратор BOSСH BFG 3000</h3>
-                  <p class="catalog-item-image">
-                    <img src="img/product-2.jpg" width="130" height="120" alt="Перфоратор BOSСH BFG 3000">
-                  </p>
-                </div>
-                <p class="catalog-item-action">
-                  <a class="button button-buy" href="#">Купить</a>
-                  <a class="button button-bookmark" href="#">В закладки</a>
-                </p>
-                <p class="catalog-item-price">
-                  <del class="old-price">22500 р.</del>
-                  <a class="button" href="#">15500 р.</a>
-                </p>
-              </li>
-              <li class="catalog-item new-item">
-                <div class="catalog-item-info">
-                  <h3>Перфоратор BOSСH BFG 6000</h3>
-                  <p class="catalog-item-image">
-                    <img src="img/product-3.jpg" width="130" height="120" alt="Перфоратор BOSСH BFG 6000">
-                  </p>
-                </div>
-                <p class="catalog-item-action">
-                  <a class="button button-buy" href="#">Купить</a>
-                  <a class="button button-bookmark" href="#">В закладки</a>
-                </p>
-                <p class="catalog-item-price">
-                  <del class="old-price">30500 р.</del>
-                  <a class="button" href="#">25500 р.</a>
-                </p>
+                <p class="catalog-title">Перфоратор BOSСH BFG 2000</p>
+                <del class="catalog-disconts"></del>
+                <p class="catalog-price" href="#">12500 Р.</p>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-info">
-                  <h3>Перфоратор BOSСH BFG 2000</h3>
-                  <p class="catalog-item-image">
-                    <img src="img/product-4.jpg" width="130" height="120" alt="Перфоратор BOSСH BFG 2000">
-                  </p>
+                <p class="catalog-actions">
+                  <a class="buttom catalog-buy" href="#">
+                    <svg class="icon" width="17" height="17">
+                      <use class="icon-cart" xlink:href="#icon-cart" x="0" y="0" />
+                    </svg>Купить</a>
+                  <a class="button catalog-bookmark" href="#">В закладки</a>
+                </p>
+                <div class="catalog-image">
+                  <img src="img/product-2.jpg" width="200" height="168"  alt="Перфоратор BOSСH BFG 2000">
                 </div>
-                <p class="catalog-item-action">
-                  <a class="button button-buy" href="#">Купить</a>
-                  <a class="button button-bookmark" href="#">В закладки</a>
-                </p>
-                <p class="catalog-item-price">
-                  <a class="button" href="#">12500 р.</a>
-                </p>
-              </li>
-              <li class="catalog-item new-item">
-                <div class="catalog-item-info">
-                  <h3>Перфоратор BOSСH BFG 3000</h3>
-                  <p class="catalog-item-image">
-                    <img src="img/product-2.jpg" width="130" height="120" alt="Перфоратор BOSСH BFG 3000">
-                  </p>
-                </div>
-                <p class="catalog-item-action">
-                  <a class="button button-buy" href="#">Купить</a>
-                  <a class="button button-bookmark" href="#">В закладки</a>
-                </p>
-                <p class="catalog-item-price">
-                  <del class="old-price">22500 р.</del>
-                  <a class="button" href="#">15500 р.</a>
-                </p>
+                <p class="catalog-title">Перфоратор BOSСH BFG 3000</p>
+                <del class="catalog-disconts">22500 P.</del>
+                <p class="catalog-price" href="#">15500 Р.</p>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-info">
-                  <h3>Перфоратор BOSСH BFG 6000</h3>
-                  <p class="catalog-item-image">
-                    <img src="img/product-3.jpg" width="130" height="120" alt="Перфоратор BOSСH BFG 6000">
-                  </p>
+                <div class="flag flag-new">Новинка</div>
+                <p class="catalog-actions">
+                  <a class="buttom catalog-buy" href="#">
+                    <svg class="icon" width="17" height="17">
+                      <use class="icon-cart" xlink:href="#icon-cart" x="0" y="0" />
+                    </svg>Купить</a>
+                  <a class="button catalog-bookmark" href="#">В закладки</a>
+                </p>
+                <div class="catalog-image">
+                  <img src="img/product-3.jpg" width="200" height="168"  alt="Перфоратор BOSСH BFG 2000">
                 </div>
-                <p class="catalog-item-action">
-                  <a class="button button-buy" href="#">Купить</a>
-                  <a class="button button-bookmark" href="#">В закладки</a>
-                </p>
-                <p class="catalog-item-price">
-                  <del class="old-price">30500 р.</del>
-                  <a class="button" href="#">25500 р.</a>
-                </p>
+                <p class="catalog-title">Перфоратор BOSСH BFG 6000</p>
+                <del class="catalog-disconts">30500 P.</del>
+                <p class="catalog-price" href="#">25500 Р.</p>
               </li>
               <li class="catalog-item">
-                <div class="catalog-item-info">
-                  <h3>Перфоратор BOSСH BFG 2000</h3>
-                  <p class="catalog-item-image">
-                    <img src="img/product-4.jpg" width="130" height="120" alt="Перфоратор BOSСH BFG 2000">
-                  </p>
+                <p class="catalog-actions">
+                  <a class="buttom catalog-buy" href="#">
+                    <svg class="icon" width="17" height="17">
+                      <use class="icon-cart" xlink:href="#icon-cart" x="0" y="0" />
+                    </svg>Купить</a>
+                  <a class="button catalog-bookmark" href="#">В закладки</a>
+                </p>
+                <div class="catalog-image">
+                  <img src="img/product-4.jpg" width="200" height="168"  alt="Перфоратор BOSСH BFG 2000">
                 </div>
-                <p class="catalog-item-action">
-                  <a class="button button-buy" href="#">Купить</a>
-                  <a class="button button-bookmark" href="#">В закладки</a>
+                <p class="catalog-title">Перфоратор BOSСH BFG 2000</p>
+                <del class="catalog-disconts"></del>
+                <p class="catalog-price" href="#">12500 Р.</p>
+              </li>
+              <li class="catalog-item">
+                <div class="flag flag-new">Новинка</div>
+                <p class="catalog-actions">
+                  <a class="buttom catalog-buy" href="#">
+                    <svg class="icon" width="17" height="17">
+                      <use class="icon-cart" xlink:href="#icon-cart" x="0" y="0" />
+                    </svg>Купить</a>
+                  <a class="button catalog-bookmark" href="#">В закладки</a>
                 </p>
-                <p class="catalog-item-price">
-                  <a class="button" href="#">12500 р.</a>
+                <div class="catalog-image">
+                  <img src="img/product-2.jpg" width="200" height="168"  alt="Перфоратор BOSСH BFG 2000">
+                </div>
+                <p class="catalog-title">Перфоратор BOSСH BFG 3000</p>
+                <del class="catalog-disconts">22500 P.</del>
+                <p class="catalog-price" href="#">15500 Р.</p>
+              </li>
+              <li class="catalog-item">
+                <p class="catalog-actions">
+                  <a class="buttom catalog-buy" href="#">
+                    <svg class="icon" width="17" height="17">
+                      <use class="icon-cart" xlink:href="#icon-cart" x="0" y="0" />
+                    </svg>Купить</a>
+                  <a class="button catalog-bookmark" href="#">В закладки</a>
                 </p>
+                <div class="catalog-image">
+                  <img src="img/product-3.jpg" width="200" height="168"  alt="Перфоратор BOSСH BFG 2000">
+                </div>
+                <p class="catalog-title">Перфоратор BOSСH BFG 6000</p>
+                <del class="catalog-disconts">30500 P.</del>
+                <p class="catalog-price" href="#">25500 Р.</p>
+              </li>
+              <li class="catalog-item">
+                <p class="catalog-actions">
+                  <a class="buttom catalog-buy" href="#">
+                    <svg class="icon" width="17" height="17">
+                      <use class="icon-cart" xlink:href="#icon-cart" x="0" y="0" />
+                    </svg>Купить</a>
+                  <a class="button catalog-bookmark" href="#">В закладки</a>
+                </p>
+                <div class="catalog-image">
+                  <img src="img/product-4.jpg" width="200" height="168"  alt="Перфоратор BOSСH BFG 2000">
+                </div>
+                <p class="catalog-title">Перфоратор BOSСH BFG 2000</p>
+                <del class="catalog-disconts"></del>
+                <p class="catalog-price" href="#">12500 Р.</p>
               </li>
             </ul>
             <ul class="pagination">
@@ -321,7 +387,7 @@
 
       <div class="footer-top container">
         <a class="footer-logo" href="index.html">
-          <img src="img/logo.svg" width="145" height="68" alt="Техномарт">
+          <img src="img/logo.svg" width="140" height="60" alt="Техномарт">
         </a>
         <nav class="footer-navigation-primary">
           <ul class="footer-navigation">
@@ -348,13 +414,25 @@
           <p class="footer-copyright">© 2010–2017 Компания «Техномарт» Все права защищены</p>
           <ul class="footer-social">
             <li>
-              <a class="social-button social-button-vk" href="#">ВКонтакте</a>
+              <a class="social-button social-button-vk" href="#">
+                <svg class="icon" width="21" height="21">
+                  <use class="icon-vk" xlink:href="#icon-vk" x="0" y="0" />
+                </svg>
+                <span class="visually-hidden">ВКонтакте</span></a>
             </li>
             <li>
-              <a class="social-button social-button-facebook" href="#">Фейсбук</a>
+              <a class="social-button social-button-facebook" href="#">
+                <svg class="icon" width="21" height="21">
+                  <use class="icon-facebook" xlink:href="#icon-facebook" x="0" y="0" />
+                </svg>
+                <span class="visually-hidden">Фейсбук</span></a>
             </li>
             <li>
-              <a class="social-button social-button-instagram" href="#">Инстраграм</a>
+              <a class="social-button social-button-instagram" href="#">
+                <svg class="icon" width="21" height="21">
+                  <use class="icon-instagram" xlink:href="#icon-instagram" x="0" y="0" />
+                </svg>
+                <span class="visually-hidden">Инстраграм</span></a>
             </li>
           </ul>
           <p class="footer-feedback">
@@ -369,6 +447,19 @@
       </div>
 
     </footer>
+
+    <section class="modal modal-bookmarks">
+      <div class="modal-bookmarks-top modal-bookmarks-layout">
+        <h2>Товар добавлен в корзину!</h2>
+      </div>
+      <div class="modal-bookmarks-bottom modal-bookmarks-layout">
+        <button class="button bookmarks-buy" type="submit">Оформить заказ</button>
+        <button class="button bookmarks-continue" type="submit">Продолжить покупки</button>
+      </div>
+      <button class="modal-close">Закрыть</button>
+    </section>
+
+    <div class="modal modal-overlay"></div>
 
   </body>
 </html>
