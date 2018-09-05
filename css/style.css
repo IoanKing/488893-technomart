@@ -742,7 +742,7 @@ input[type="search"]:focus {
   min-height: 266px;
   margin-bottom: 20px;
 
-  background-color: #aaaaaa;
+  background-color: #aeaeae;
 }
 
 .feature-slider input[type=radio] {
@@ -1142,8 +1142,10 @@ input[type="search"]:focus {
   height: 168px;
   overflow: hidden;
 }
+
 .catalog-image img{
   max-width:100%;
+  background-color: #aeaeae;
 }
 
 .catalog-title {
@@ -1294,6 +1296,10 @@ input[type="search"]:focus {
 
 .manufacture-item:active a {
   opacity: 0.5;
+}
+
+.manufacture-item img {
+  background-color: #aeaeae;
 }
 
 .services p,
@@ -1533,6 +1539,8 @@ input[type="search"]:focus {
 .contact-info .contact-map_small {
   margin: 0;
   padding: 0;
+
+  background-image: #aeaeae;
 }
 
 .about-us ul {
@@ -2392,6 +2400,46 @@ input:disabled + label {
 /* 6. Модальные окна          */
 /* ========================== */
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .modal {
   position: fixed;
 
@@ -2418,6 +2466,8 @@ input:disabled + label {
 
   background-color: white;
   border-top: 5px solid #ee3643;
+
+  animation: bounce 0.6s;
 }
 
 .modal-write-us.active {
@@ -2425,6 +2475,7 @@ input:disabled + label {
 }
 
 .modal-write-us input[type="text"],
+.modal-write-us input[type="email"],
 .modal-write-us textarea {
   padding: 13px 15px;
 
@@ -2514,6 +2565,7 @@ input:disabled + label {
 }
 
 .feedback-item input[type="text"],
+.feedback-item input[type="email"],
 .feedback-text,
 .feedback-text textarea {
   width: 100%
@@ -2661,10 +2713,22 @@ input:disabled + label {
   height: 446px;
   margin-top: -223px;
   margin-left: -470px;
+
+  background-color: #aeaeae;
+
+  animation: bounce 0.6s;
 }
 
 .modal-map.active {
   display: block;
+}
+
+.modal-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border:none;
 }
 
 .modal-map p {
@@ -2674,6 +2738,10 @@ input:disabled + label {
 .modal-map {
   -webkit-box-shadow: 0 0 16px 1px rgba(47, 42, 43, 0.5);
           box-shadow: 0 0 16px 1px rgba(47, 42, 43, 0.5);
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-close {
