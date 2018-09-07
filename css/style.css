@@ -1341,6 +1341,7 @@ input[type="search"]:focus {
 .services-tabs {
   position: relative;
   width: 240px;
+  margin-right: auto;
   padding: 20px 0;
 
   list-style: none;
@@ -1968,8 +1969,18 @@ input[type="search"]:focus {
   opacity: 1;
 }
 
+.filter-input-checkbox:hover:not(:disabled) + label::before,
+.filter-input-checkbox:focus:not(:disabled) + label::before {
+  background-image: url(../img/checkbox-off-focus.svg);
+}
+
 .filter-input-checkbox:checked + label::before {
   background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-input-checkbox:checked:hover:not(:disabled) + label::before,
+.filter-input-checkbox:checked:focus:not(:disabled) + label::before {
+  background-image: url(../img/checkbox-on-focus.svg);
 }
 
 .filter-input-radio + label::before {
@@ -1983,8 +1994,18 @@ input[type="search"]:focus {
   opacity: 1;
 }
 
+.filter-input-radio:hover:not(:disabled) + label::before,
+.filter-input-radio:focus:not(:disabled) + label::before {
+  background-image: url(../img/radio-off-focus.svg);
+}
+
 .filter-input-radio:checked + label::before {
   background-image: url(../img/radio-on.svg);
+}
+
+.filter-input-radio:checked:hover:not(:disabled) + label::before,
+.filter-input-radio:checked:focus:not(:disabled) + label::before {
+  background-image: url(../img/radio-on-focus.svg);
 }
 
 input:disabled + label {
