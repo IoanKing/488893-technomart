@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700%7CCuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="inner-page">
       <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -215,8 +215,12 @@
                 </li>
               </ul>
               <div class="control-bar-sort">
-                <a class="sort-up active" href="#" aria-label="по возрастанию"><span class="visually-hidden">По возрастанию</span></a>
-                <a class="sort-down" href="#" aria-label="по убыванию"><span class="visually-hidden">По убыванию</span></a>
+                <a class="sort-up active" href="#" aria-label="по возрастанию">
+                  <span class="visually-hidden">По возрастанию</span>
+                </a>
+                <a class="sort-down" href="#" aria-label="по убыванию">
+                  <span class="visually-hidden">По убыванию</span>
+                </a>
               </div>
             </div>
             <ul class="catalog-list">
@@ -453,7 +457,7 @@
         <h2>Товар добавлен в корзину!</h2>
       </div>
       <div class="modal-bookmarks-bottom modal-bookmarks-layout">
-        <button class="button bookmarks-buy" type="submit">Оформить заказ</button>
+        <a class="button bookmarks-buy" type="submit">Оформить заказ</a>
         <button class="button bookmarks-continue" type="submit">Продолжить покупки</button>
       </div>
       <button class="modal-close">Закрыть</button>
@@ -461,6 +465,6 @@
 
     <div class="modal modal-overlay"></div>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

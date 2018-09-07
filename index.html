@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700%7CCuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -132,8 +132,8 @@
         <h2 class="visually-hidden">Услуги и товары</h2>
         <div class="feature-list">
           <div class="feature-slider">
-            <input type="radio" id="slider-tab-punchers" name="toggle">
-            <input type="radio" id="slider-tab-drills" name="toggle" checked>
+            <input class="slider-tab-punchers" type="radio" id="slider-tab-punchers" name="toggle">
+            <input class="slider-tab-drills" type="radio" id="slider-tab-drills" name="toggle" checked>
             <div class="slider-controls">
               <label for="slider-tab-punchers">Слайд Перфораторы</label>
               <label for="slider-tab-drills">Слайд Дрели</label>
@@ -269,9 +269,9 @@
           <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-slider">
-            <input class="visually-hidden" type="radio" id="tab-delivery" name="services-tab" checked>
-            <input class="visually-hidden" type="radio" id="tab-guarantee" name="services-tab">
-            <input class="visually-hidden" type="radio" id="tab-credit" name="services-tab">
+            <input class="visually-hidden tab-delivery" type="radio" id="tab-delivery" name="services-tab" checked>
+            <input class="visually-hidden tab-guarantee" type="radio" id="tab-guarantee" name="services-tab">
+            <input class="visually-hidden tab-credit" type="radio" id="tab-credit" name="services-tab">
             <div class="services-tabs">
               <label for="tab-delivery">Доставка</label>
               <label for="tab-guarantee">Гарантия</label>
@@ -412,13 +412,13 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CBB4QBDt8C" width="940" height="446" frameborder="1" allowfullscreen="true"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBB4QBDt8C" width="940" height="446"></iframe>
       <img src="img/map-big.jpg" width="940" height="446" alt="Карта проезда">
       <button class="modal-close">Закрыть</button>
     </section>
 
     <div class="modal modal-overlay"></div>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
