@@ -1810,7 +1810,7 @@ input[type="search"]:focus {
 .sort-up.active,
 .sort-down:active,
 .sort-down.active {
-  border-bottom: 11px solid#ee3643;
+  border-bottom: 11px solid #ee3643;
 }
 
 .filters-form fieldset {
