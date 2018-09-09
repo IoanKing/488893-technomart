@@ -262,7 +262,9 @@ input[type="search"]:focus {
 .bookmarks:hover,
 .bookmarks:focus,
 .cart:hover,
-.cart:focus {
+.cart:focus,
+.cart.active:hover,
+.cart.active:focus {
   background-color: #212a3a;
 }
 
@@ -643,9 +645,6 @@ input[type="search"]:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -722,6 +721,7 @@ input[type="search"]:focus {
 
 .promo-item h3,
 .feature-item h3 {
+  max-width: 160px;
   margin: 0;
   margin-bottom: 15px;
   font-size: 24px;
@@ -1064,7 +1064,7 @@ input[type="search"]:focus {
 
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
